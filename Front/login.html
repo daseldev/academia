@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/006012d854.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FrontLogin.css">
+    <link rel="shortcut icon" type="image/png" href="notebook_6711297.png">
+    <title>I.E Sabiduria | Login</title>
+</head>
+
+<body>
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <form id= logUser action="#">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="user" id ="userid" required>
+                        <label for="#">Usuario</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="passwordid" required>
+                        <label for="#">Contraseña</label>
+                    </div>
+                    <div class="olvidar">
+                        <label for="#">
+                            <a href="#">Olvidé la contraseña</a>
+                        </label>
+                    </div>
+                </form>
+                <button onclick="guardarInfoLogin()">Acceder</button>
+                <div class="registrar">
+                    <p>¿No tienes una cuenta? <a href="register.html">¡Registrate!</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="indexLogRes.js"></script>
+
+</body>
+
+</html>

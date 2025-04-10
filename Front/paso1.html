@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/006012d854.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FrontPaso1.css">
+    <link rel="shortcut icon" type="image/png" href="notebook_6711297.png">
+    <title>I.E Sabiduria | Paso 1</title>
+</head>
+
+<body>
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <div class="elementos-superiores"></div>
+                <form action="#">
+                    <h2>¡Queremos Conocerte!</h2>
+                    <div class="nombrecomp">
+                        <label for="" id = "pp">Primer Nombre:</label>
+                        <label for="" id = "pnombre"> Germán</label>
+                        <label for="" id = "pp">Segundo Nombre:</label>
+                        <label for="" id = "snombre">Miguel</label>
+                        <label for="" id = "pp">Primer Apellido:</label>
+                        <label for="" id = "papellido">Centanaro</label>
+                        <label for="" id = "pp">Segundo Apellido:</label>
+                        <label for="" id = "sapellido">Oviedo</label>
+                    </div>
+                    
+                    <div class="dir1">
+                        <div class="direccion">
+                            <div class="selector">
+                                <select name="Tipo: " id="TipoV">
+                                    <option value="">Tipo de Vía:</option>
+                                    <option value="Carrera">Carrera</option>
+                                    <option value="Calle">Calle</option>
+                                    <option value="Transversal">Transversal</option>
+                                    <option value="Diagonal">Diagonal</option>
+                                    <option value="Avenida">Avenida</option>
+                                    <option value="Bulevar">Bulevar</option>
+                                    <option value="Autopista">Autopista</option>
+                                </select>
+                                <i id="idt"></i>
+                            </div>
+
+                            <div class="input-contenedor" id="dir">
+                                <i class="fa-solid fa-house-user"></i>
+                                <input type="text" id="dirid" required>
+                                <label for="#">Dirección: *</label>
+                            </div>
+                            <button onclick="rodbtt()" id="rd">+</button>
+                        </div>  
+
+                        <div class="input-contenedor">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <input type="number" id="cpd" required>
+                            <label for="#">Código Postal:</label>
+                        </div>
+                        <div class="munidept">
+                            <div class="selector">
+                                <select name="municipios" id="municipios">
+                                    <option value="">Municipio:</option>
+                                </select>
+                                <i id="idm"></i>
+                            </div>
+                            <div class="selector">
+                                <select name="departamentos" id="departamentos">
+                                    <option value="">Departamento:</option>
+                                </select>
+                                <i id="idd"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="dir2">
+                        <div class="direccion">
+                            <div class="selector">
+                                <select name="Tipo: " id="TipoV">
+                                    <option value="">Tipo de Vía:</option>
+                                    <option value="Carrera">Carrera</option>
+                                    <option value="Calle">Calle</option>
+                                    <option value="Transversal">Transversal</option>
+                                    <option value="Diagonal">Diagonal</option>
+                                    <option value="Avenida">Avenida</option>
+                                    <option value="Bulevar">Bulevar</option>
+                                    <option value="Autopista">Autopista</option>
+                                </select>
+                                <i id="idt"></i>
+                            </div>
+
+                            <div class="input-contenedor" id="dir">
+                                <i class="fa-solid fa-house-user"></i>
+                                <input type="text" id="dirid" required>
+                                <label for="#">Dirección: *</label>
+                            </div>
+                            <button onclick="rodbtt2()" id="rd">+</button>
+                        </div>
+
+                        <div class="input-contenedor">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <input type="number" id="cpd" required>
+                            <label for="#">Código Postal:</label>
+                        </div>
+                        <div class="munidept">
+                            <div class="selector">
+                                <select name="municipios" id="municipios">
+                                    <option value="">Municipio:</option>
+                                </select>
+                                <i id="idm"></i>
+                            </div>
+                            <div class="selector">
+                                <select name="departamentos" id="departamentos">
+                                    <option value="">Departamento:</option>
+                                </select>
+                                <i id="idd"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dir3">
+                        <div class="direccion">
+                            <div class="selector">
+                                <select name="Tipo: " id="TipoV">
+                                    <option value="">Tipo de Vía:</option>
+                                    <option value="Carrera">Carrera</option>
+                                    <option value="Calle">Calle</option>
+                                    <option value="Transversal">Transversal</option>
+                                    <option value="Diagonal">Diagonal</option>
+                                    <option value="Avenida">Avenida</option>
+                                    <option value="Bulevar">Bulevar</option>
+                                    <option value="Autopista">Autopista</option>
+                                </select>
+                                <i id="idt"></i>
+                            </div>
+
+                            <div class="input-contenedor" id="dir">
+                                <i class="fa-solid fa-house-user"></i>
+                                <input type="text" id="dirid" required>
+                                <label for="#">Dirección: *</label>
+                            </div>
+                        </div>
+
+                        <div class="input-contenedor">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <input type="number" id="cpd" required>
+                            <label for="#">Código Postal:</label>
+                        </div>
+                        <div class="munidept">
+                            <div class="selector">
+                                <select name="municipios" id="municipios">
+                                    <option value="">Municipio:</option>
+                                </select>
+                                <i id="idm"></i>
+                            </div>
+                            <div class="selector">
+                                <select name="departamentos" id="departamentos">
+                                    <option value="">Departamento:</option>
+                                </select>
+                                <i id="idd"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tel1">
+                        <div class="telefono">
+                            <div class="selector">
+                                <select name="TipoT" id="TipoT">
+                                    <option value="">Tipo:</option>
+                                    <option value="Móvil">Móvil</option>
+                                    <option value="Fijo">Fijo</option>
+
+                                </select>
+                                <i id="idtt"></i>
+                            </div>
+                            <div class="input-contenedor" id="telc">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <input type="number" id="telid" required>
+                                <label for="#">Número Telefónico: *</label>
+                            </div>
+                            <button onclick="rodbtt3()" id="rd">+</button>
+                        </div>
+                    </div>
+                    <div class="tel2">
+                        <div class="telefono">
+                            <div class="selector">
+                                <select name="TipoT" id="TipoT">
+                                    <option value="">Tipo:</option>
+                                    <option value="Móvil">Móvil</option>
+                                    <option value="Fijo">Fijo</option>
+
+                                </select>
+                                <i id="idtt"></i>
+                            </div>
+                            <div class="input-contenedor" id="telc">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <input type="number" id="telid" required>
+                                <label for="#">Número Telefónico: *</label>
+                            </div>
+                            <button onclick="rodbtt4()" id="rd2">+</button>
+                        </div>
+                    </div>
+                    <div class="tel3">
+                        <div class="telefono">
+                            <div class="selector">
+                                <select name="TipoT" id="TipoT">
+                                    <option value="">Tipo:</option>
+                                    <option value="Móvil">Móvil</option>
+                                    <option value="Fijo">Fijo</option>
+
+                                </select>
+                                <i id="idtt"></i>
+                            </div>
+                            <div class="input-contenedor" id="telc">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <input type="number" id="telid" required>
+                                <label for="#">Número Telefónico: *</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Enviar" onclick="guardarPaso1()"/>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        let b = document.querySelector(".dir1 #rd");
+        let b2 = document.querySelector(".dir2 #rd");
+        let b3 = document.querySelector(".tel1 #rd");
+        let b4 = document.querySelector(".tel2 #rd2");
+        let d1 = document.querySelector(".dir2");
+        let d2 = document.querySelector(".dir3");
+        let t1 = document.querySelector(".tel2");
+        let t2 = document.querySelector(".tel3");
+        function rodbtt() {
+            dtam = 2;
+            d1.style.display = "block";
+            b.style.visibility = "hidden";
+            let elementoSuperior = document.querySelector(".contenedor .formulario .elementos-superiores");
+            let estiloActual = window.getComputedStyle(elementoSuperior);
+            let alturaActual = parseInt(estiloActual.height.replace('px', ''));
+            let nuevaAltura = alturaActual + 200;
+            elementoSuperior.style.height = nuevaAltura + 'px';
+        }
+        function rodbtt2() {
+            dtam = 3;
+            d2.style.display = "block";
+            b2.style.visibility = "hidden";
+            b3.style.visibility = "block";
+            let elementoSuperior = document.querySelector(".contenedor .formulario .elementos-superiores");
+            let estiloActual = window.getComputedStyle(elementoSuperior);
+            let alturaActual = parseInt(estiloActual.height.replace('px', ''));
+            let nuevaAltura = alturaActual + 200;
+            elementoSuperior.style.height = nuevaAltura + 'px';
+        }
+        function rodbtt3() {
+            ttam = 2;
+            b3.style.visibility = "hidden";
+            t1.style.display = "block";
+            let elementoSuperior = document.querySelector(".contenedor .formulario .elementos-superiores");
+            let estiloActual = window.getComputedStyle(elementoSuperior);
+            let alturaActual = parseInt(estiloActual.height.replace('px', ''));
+            let nuevaAltura = alturaActual + 60;
+            elementoSuperior.style.height = nuevaAltura + 'px';
+        } 
+        function rodbtt4() {
+            ttam = 3;
+            b4.style.visibility = "hidden";
+            t2.style.display = "block";
+            let elementoSuperior = document.querySelector(".contenedor .formulario .elementos-superiores");
+            let estiloActual = window.getComputedStyle(elementoSuperior);
+            let alturaActual = parseInt(estiloActual.height.replace('px', ''));
+            let nuevaAltura = alturaActual + 60;
+            elementoSuperior.style.height = nuevaAltura + 'px';
+        }
+    </script>
+    <script src="municipios_colombia.js"></script>
+    <script src="dptos_colombia.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<script src="indexPaso1.js"></script>    

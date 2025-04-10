@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(BG2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Asegura que no haya márgenes predeterminados */
+}
+
+section {
+    width: 800px;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+    justify-content: flex-start;
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+section h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    text-shadow: 2px 2px 5px #3d3d3d;
+}
+
+button{
+    position: relative;
+    top: 25px;
+    width: 30%;
+    height: 45px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+i{
+    font-size: 2rem;
+}
+
+#ckv1{
+    position: relative;
+    color: rgb(133, 233, 94);
+    opacity: 1;
+    left: 150px;
+    top: -165px;
+}
+
+#ckv2{
+    position: relative;
+    color: rgb(133, 233, 94);
+    opacity: 1;
+    left: 150px;
+    top: -130px;
+}
+
+#ckv3{
+    position: relative;
+    color: rgb(133, 233, 94);
+    opacity: 1;
+    left: 150px;
+    top: -100px;
+}
+
+#ckg1{
+    position: relative;
+    color: #c7c7c7;
+    opacity: .8;
+    left: 150px;
+    top: -165px;
+}
+
+#ckg2{
+    position: relative;
+    color: #c7c7c7;
+    opacity: .8;
+    left: 150px;
+    top: -130px;
+}
+
+#ckg3{
+    position: relative;
+    color: #c7c7c7;
+    opacity: .8;
+    left: 150px;
+    top: -100px;
+}

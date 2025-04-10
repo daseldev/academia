@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.elementos-superiores {
+    height: 280px;
+}
+.contenedor{
+    position: relative;
+    width: 700px;
+    border: 2px solid rgba(255,255,255,.6);
+    border-radius: 10px;
+    margin-bottom: 0px;
+    backdrop-filter: blur(15px);
+    height: 500px;
+    max-height: 500px;
+    text-align: center;
+    padding: 30px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+}
+.contenedor::-webkit-scrollbar{
+    width: 7px;
+
+}
+.contenedor::-webkit-scrollbar-thumb{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.contenedor h2{
+    font-size: 2.3rem;
+    color: #fff;
+    margin-top: -20px; 
+    margin-bottom: 30px; 
+    align-self: center; 
+    text-shadow: 2px 2px 5px rgb(26, 26, 26);
+    
+}
+
+.input-contenedor{
+    position: relative;
+    top: 15px;
+    margin: 30px 0;
+    width: 450px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-contenedor label{
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    transform: translateY(-60%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+}
+
+input:focus ~ label, input:valid ~ label{
+    top: -5px
+}
+
+.input-contenedor input{
+    position: relative;
+    width: 80%;
+    left: -43px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 35px 1 -2px;
+    color: #fff;
+}
+
+.input-contenedor i{
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 0px;
+    right: 8px;
+}
+
+.dir1 .direccion{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -25px;
+    margin-bottom: -25px;
+    left: 15px;
+}
+
+.dir1 .direccion #dir{
+    margin: 30px 0;
+    width: 300px;
+    position: relative;
+    left: 19px;
+    border-bottom: 2px solid #fff;
+}
+
+.dir1 .direccion #dir input{
+    position: relative;
+    left: -25px;
+}
+
+.dir1 .direccion #TipoV {
+    appearance: none;
+    position: relative;
+    top: 20px;
+    left: -23px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 130%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir1 .direccion #TipoV:hover {
+    background: #80d68b;
+}
+
+.dir1 .direccion #idt {
+    position: relative;
+    left: 87px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir1 .direccion #rd{
+    position: relative;
+    left: 25px;
+    top: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.3rem;
+    transition: .4s;
+}
+
+.dir1 .direccion #rd:hover{
+    opacity: .9;
+}
+
+.dir1 .munidept{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.dir1 .munidept #municipios {
+    appearance: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    left: -14px;
+    display: inline-block;
+    width: 105%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir1 .munidept #municipios:hover {
+    background: #80d68b;
+}
+
+.dir1 .munidept #idm {
+    position: relative;
+    left: 172px;
+    top: -20px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir1 .munidept #departamentos {
+    appearance: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 90%;
+    left: 20px;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir1 .munidept #departamentos:hover {
+    background: #80d68b;
+}
+
+.dir1 .munidept #idd {
+    position: relative;
+    left: 211px;
+    top: -20px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir2 .direccion{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -35px;
+    margin-bottom: -25px;
+    left: 15px;
+}
+
+.dir2 .direccion #dir{
+    margin: 30px 0;
+    width: 300px;
+    position: relative;
+    left: 19px;
+    border-bottom: 2px solid #fff;
+}
+
+.dir2 .direccion #dir input{
+    position: relative;
+    left: -25px;
+}
+
+.dir2 .direccion #TipoV {
+    appearance: none;
+    position: relative;
+    top: 20px;
+    left: -23px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 130%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir2 .direccion #TipoV:hover {
+    background: #80d68b;
+}
+
+.dir2 .direccion #idt {
+    position: relative;
+    left: 87px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir2 .direccion #rd{
+    position: relative;
+    left: 25px;
+    top: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.3rem;
+    transition: .4s;
+}
+
+.dir2 .direccion #rd:hover{
+    opacity: .9;
+}
+
+.dir2 .munidept{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.dir2 .munidept #municipios {
+    appearance: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    left: -14px;
+    display: inline-block;
+    width: 105%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir2 .munidept #municipios:hover {
+    background: #80d68b;
+}
+
+.dir2 .munidept #idm {
+    position: relative;
+    left: 172px;
+    top: -20px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir2 .munidept #departamentos {
+    appearance: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 90%;
+    left: 20px;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir2 .munidept #departamentos:hover {
+    background: #80d68b;
+}
+
+.dir2 .munidept #idd {
+    position: relative;
+    left: 211px;
+    top: -20px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir3 .direccion{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -35px;
+    margin-bottom: -25px;
+    left: 15px;
+}
+
+.dir3 .direccion #dir{
+    margin: 30px 0;
+    width: 300px;
+    position: relative;
+    left: 8px;
+    border-bottom: 2px solid #fff;
+}
+
+.dir3 .direccion #dir input{
+    position: relative;
+    left: -25px;
+}
+
+.dir3 .direccion #TipoV {
+    appearance: none;
+    position: relative;
+    top: 20px;
+    left: -40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 130%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir3 .direccion #TipoV:hover {
+    background: #80d68b;
+}
+
+.dir3 .direccion #idt {
+    position: relative;
+    left: 75px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+
+.dir3 .munidept{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.dir3 .munidept #municipios {
+    appearance: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    left: -14px;
+    display: inline-block;
+    width: 105%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir3 .munidept #municipios:hover {
+    background: #80d68b;
+}
+
+.dir3 .munidept #idm {
+    position: relative;
+    left: 172px;
+    top: -20px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir3 .munidept #departamentos {
+    appearance: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 90%;
+    left: 20px;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.dir3 .munidept #departamentos:hover {
+    background: #80d68b;
+}
+
+.dir3 .munidept #idd {
+    position: relative;
+    left: 211px;
+    top: -20px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.dir2{
+display: none;
+}
+
+.dir3{
+display: none;
+}
+
+.tel1 .telefono{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -35px;
+    margin-bottom: 5px;
+    left: 15px;
+}
+.tel1 .telefono #telc{
+    margin: 30px 0;
+    width: 300px;
+    position: relative;
+    left: 40px;
+    border-bottom: 2px solid #fff;
+}
+
+.tel1 .telefono #telc input{
+    position: relative;
+    left: -25px;
+}
+
+.tel1 .telefono #TipoT {
+    appearance: none;
+    position: relative;
+    top: 20px;
+    left: -49px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 230%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.tel1 .telefono #TipoT:hover {
+    background: #80d68b;
+}
+
+.tel1 .telefono #idtt {
+    position: relative;
+    left: 65px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.tel1 .telefono #rd{
+    position: relative;
+    left: 45px;
+    top: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.3rem;
+    transition: .4s;
+}
+
+.tel1 .telefono #rd:hover{
+    opacity: .9;
+}
+
+.tel2 .telefono{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -35px;
+    margin-bottom: 5px;
+    left: 15px;
+}
+.tel2 .telefono #telc{
+    margin: 30px 0;
+    width: 300px;
+    position: relative;
+    left: 40px;
+    border-bottom: 2px solid #fff;
+}
+
+.tel2 .telefono #telc input{
+    position: relative;
+    left: -25px;
+}
+
+.tel2 .telefono #TipoT {
+    appearance: none;
+    position: relative;
+    top: 20px;
+    left: -49px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 230%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.tel2 .telefono #TipoT:hover {
+    background: #80d68b;
+}
+
+.tel2 .telefono #idtt {
+    position: relative;
+    left: 65px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.tel2 .telefono #rd2{
+    position: relative;
+    left: 45px;
+    top: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.3rem;
+    transition: .4s;
+}
+
+.tel2 .telefono #rd2:hover{
+    opacity: .9;
+}
+.tel3 .telefono{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -35px;
+    margin-bottom: 5px;
+    left: 15px;
+}
+.tel3 .telefono #telc{
+    margin: 30px 0;
+    width: 300px;
+    position: relative;
+    left: 28px;
+    border-bottom: 2px solid #fff;
+}
+
+.tel3 .telefono #telc input{
+    position: relative;
+    left: -25px;
+}
+
+.tel3 .telefono #TipoT {
+    appearance: none;
+    position: relative;
+    top: 20px;
+    left: -66px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 230%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    box-shadow: 1px 1px 2px rgb(92, 92, 92);
+    z-index: 2;
+}
+
+.tel3 .telefono #TipoT:hover {
+    background: #80d68b;
+}
+
+.tel3 .telefono #idtt {
+    position: relative;
+    left: 50px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    z-index: 3;
+}
+
+.tel2{
+display: none;
+}
+
+.tel3{
+display: none;
+}
+
+.contenedor input[type="submit"]{
+    width: 200px;
+    height: 60px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px #7c7c7c;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+.contenedor input[type="submit"]:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 2px #7c7c7c;
+    text-shadow: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.nombrecomp{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+.nombrecomp #pnombre, #snombre, #papellido, #sapellido{
+    position: relative;
+    left: -22px;
+    margin: 20px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.nombrecomp #pp{
+    margin-bottom: -16px;
+    margin-top: 1px;
+    font-size: 1rem;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+}

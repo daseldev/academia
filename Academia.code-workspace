@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Academia",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Front"
+	}
+}

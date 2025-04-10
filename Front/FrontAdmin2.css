@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    background-color: #ffffff33;
+    padding: 10px;
+    color: #fff;
+    font-weight: normal;
+    border: 1.5px solid #5f5346;
+}
+td {
+    background-color: rgb(245, 250, 215);
+    padding: 10px;
+    color: #2e2e2e;
+    font-weight: normal;
+    border: 0.1px solid #a7a7a7; 
+}
+thead th {
+    background-color: #8D7B68;
+}
+tbody tr:hover {
+    background-color: #ffffff4d;
+}
+tbody td {
+    position: relative;
+}
+
+.pageContainer {
+    background-color: #fffaf2;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    width: 900px;
+    height: 40px;
+    top: -20px;
+    position: relative;
+    background-color: #8D7B68;
+    border: 3px solid #fdfdfd;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    line-height: 50px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+#ProgMostrar h1 {
+    font-size: 2.3rem;
+    color: black;
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    align-self: center; 
+}
+
+#ProgMostrar{
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(253, 253, 237);
+    border-radius: 5px;
+    overflow: auto;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+#ProgMostrar::-webkit-scrollbar {
+    width: 7px;
+}
+
+#ProgMostrar::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 124, 124);
+    border-radius: 10px;
+}
+
+.ediprogram{
+    display: flex;
+}
+
+section{
+    position: relative;
+    width: 500px;
+    height: 800px;
+    background-color: rgb(253, 253, 237);
+    border-radius: 5px;
+    overflow: auto;
+    margin: 10px;
+    text-align: center;
+    margin-right: 55px;
+    margin-left: 55px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+section::-webkit-scrollbar {
+    width: 7px;
+}
+
+section::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 124, 124);
+    border-radius: 10px;
+}
+
+
+#programaForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#programaForm h3,
+#programaForm select,
+#programaForm input[type="submit"] {
+    margin-right: 15px;
+}
+
+#programaForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 10%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#programaForm select:hover {
+    background: #80d68b;
+}
+
+#programaForm i {
+    position: absolute;
+    left: 710px;
+    top: calc(21.2%);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#programaForm:hover i {
+    margin-top: 1.5px;
+}
+
+#programaForm input{
+    width: 65px;
+    height: 29px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+#programaForm input:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+
+#programasDataTable {
+    width: 1029px;
+    font-family: "Poppins";
+    font-weight: 100;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000001a;
+    margin: 0 auto;
+}
+
+#programaAsigForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#programaAsigForm h3,
+#programaAsigForm select,
+#programaAsigForm input[type="submit"] {
+    margin-right: 15px;
+}
+
+#programaAsigForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 10%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#programaAsigForm select:hover {
+    background: #80d68b;
+}
+
+#programaAsigForm i {
+    position: absolute;
+    left: 720px;
+    top: calc(21.2%);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#programaAsigForm:hover i {
+    margin-top: 1.5px;
+}
+
+#programaAsigForm input{
+    width: 65px;
+    height: 29px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+#programaAsigForm input:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+#asigDataTable {
+    width: 1029px;
+    font-family: "Poppins";
+    font-weight: 100;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000001a;
+    margin: 0 auto;
+}
+
+.input-contenedor{
+    position: relative;
+    top: 15px;
+    margin: 15px 0;
+    width: 300px;
+    border-bottom: 2px solid #383838;
+}
+
+.input-contenedor label{
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    transform: translateY(-60%);
+    color: #383838;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+}
+
+input:focus ~ label, input:valid ~ label{
+    top: -5px
+}
+
+.input-contenedor input{
+    width: 85%;
+    height: 30px;
+    position: relative;
+    left: -20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 35px 1 -2px;
+    color: #383838;
+}
+
+.input-contenedor i{
+    position: absolute;
+    color: #383838;
+    font-size: 1.6rem;
+    top: 0px;
+    right: 8px;
+}
+
+.textarea-container{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.textarea-container label{
+    color: #383838;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.textarea-container textarea{
+    height: 90px;
+    width: 200px;
+}
+
+.textarea-container label,
+.textarea-container textarea{
+    margin-right: 10px;
+}
+
+#agregarProgramaForm{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#agregarProgramaForm h1{
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.multinput-container{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.multinput-container label,
+.multinput-container #requerimientos{
+    margin-right: 10px;
+}
+
+.multinput-container #requerimientos{
+    background:#ececec  ;
+    width:200px;
+    height:100px;
+    padding:5px;
+    margin:5px;
+    border-width: 2px
+}
+
+.multinput-container #requerimientos label{
+    color: #383838;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#deleteProgramaForm{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#deleteProgramaForm h1{
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.ediprogram button{
+    width: 80px;
+    height: 29px;
+    background: #8D7B68;
+    margin-top: 25px;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+.ediprogram button:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+#updateProgramaForm{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#updateProgramaForm h1{
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.multinput-container{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.multinput-container label,
+.multinput-container #requerimientosu{
+    margin-right: 10px;
+}
+
+.multinput-container #requerimientosu{
+    background:#ececec  ;
+    width:200px;
+    height:100px;
+    padding:5px;
+    margin:5px;
+    border-width: 2px
+}
+
+.multinput-container #requerimientosu label{
+    color: #383838;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#asignaturaForm{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#asignaturaForm h1{
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+#asignaturaForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 50%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#asignaturaForm .con select:hover {
+    background: #80d68b;
+}
+
+#asignaturaForm .con i {    
+    position: absolute;
+    left: 260px;
+    top: calc(20px);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#asignaturaForm .con :hover i {
+    margin-top: 1.5px;
+}
+
+#asignaturaForm .con{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    margin-top: 2px;
+}
+
+#asignaturaForm .con label{
+    color: #383838;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#asignaturaForm .con label,
+#asignaturaForm .con #area{
+    margin-right: 10px;
+}
+
+#deleteAsigForm{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 16px;
+    margin-top: -10px;
+}
+
+#deleteAsigForm h1{
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    color: #000000;
+    text-align: center;
+}
+
+
+#updateAsignaturaForm{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+
+#updateAsignaturaForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 50%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+
+#updateAsignaturaForm .con select:hover {
+    background: #80d68b;
+}
+
+#updateAsignaturaForm .con i {    
+    position: absolute;
+    left: 258px;
+    top: calc(20px);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#updateAsignaturaForm .con :hover i {
+    margin-top: 1.5px;
+}
+
+#updateAsignaturaForm .con{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    margin-top: 2px;
+}
+
+#updateAsignaturaForm .con label{
+    color: #383838;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#updateAsignaturaForm .con label,
+#updateAsignaturaForm .con #area{
+    margin-right: 10px;
+}

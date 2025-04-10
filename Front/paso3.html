@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/006012d854.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FrontPaso3.css">
+    <link rel="shortcut icon" type="image/png" href="notebook_6711297.png">
+    <title>I.E Sabiduria | Paso 3: Facturación</title>
+</head>
+
+<body>
+    <h1>Finalización de la inscripción</h1>
+    <section id="seccionSuperior">
+        <h1>Información de pago</h1>
+        <div class="pago">
+            <p>Opciones de pago:</p>
+            <div class="selector">
+                <select name="TipoP: " id="TipoP">
+                    <option value="">...</option>
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Tarjeta de Credito">Tarjeta de Crédito</option>
+                    <option value="Debito">Tarjeta Débito</option>
+                    <option value="Pse">Pse</option>
+                    <option value="Nequi">Nequi</option>
+                </select>
+                <i id="tp"></i>
+            </div> 
+        </div>
+        <div class="info" id="pagoId">
+            <p>Monto a pagar: </p>
+            <p>Programa a cursar: </p>
+        </div>
+        <input type="submit" value="Pagar" onclick="pagar()" />
+    </section>
+
+    <section id="seccionInferior">
+        <h1>Recibo de pago</h1>
+        <p>Aquí se mostrará su recibo al realizar el pago...</p>
+    </section>
+
+</body>
+<script src="indexPaso3.js"></script>
+
+</html>

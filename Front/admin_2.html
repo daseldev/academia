@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/006012d854.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="FrontAdmin2.css" />
+    <link rel="stylesheet" href="multi-select-tag.css" />
+    <link rel="shortcut icon" type="image/png" href="notebook_6711297.png" />
+    <title>I.E Sabiduria | Administrador</title>
+  </head>
+
+  <body>
+    <div class="pageContainer">
+      <header>
+        <div class="nav">
+          <a href="login.html">Inicio</a>
+          <a href="admin_2.html">Programas</a>
+          <a href="admin_1.html">Información del Periodo</a>
+        </div>
+      </header>
+
+      <section id="ProgMostrar">
+        <div class="tabla">
+          <h1>Programas</h1>
+          <div>
+            <form id="programaForm" action="#">
+              <h3>Filtrar por programa:</h3>
+              <select name="programa" id="programa">
+                <option value="todo">Todos</option>
+              </select>
+              <i></i>
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+          <table id="programasDataTable">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Costo</th>
+                <th scope="col">Requisitos</th>
+              </tr>
+            </thead>
+            <tbody id="programasDataTableTbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="ediprogram">
+        <section>
+          <div>
+            <form id="agregarProgramaForm" action="#">
+              <h1>Agregar programa</h1>
+              <div class="input-contenedor">
+                <i class="fa-solid fa-sliders"></i>
+                <input type="text" id="ID" name="ID" required />
+                <label for="ID">ID del Programa: </label>
+              </div>
+              <div class="input-contenedor">
+                <i class="fa-solid fa-book"></i>
+                <input type="text" id="nombre" name="nombre" required />
+                <label for="nombre">Nombre del Programa: </label>
+              </div>
+              <div class="textarea-container">
+                <label for="descripcion">Descripción del Programa:</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+              </div>
+              <div class="input-contenedor">
+                <i class="fa-solid fa-receipt"></i>
+                <input type="number" id="costo" name="costo" required />
+                <label for="costo">Costo del Programa: </label>
+              </div>
+
+              <div class="multinput-container">
+                <label> Requerimientos: </label>
+                <select id="requerimientos" multiple></select>
+              </div>
+
+              <button onclick="agregarPrograma()">Enviar</button>
+            </form>
+          </div>
+          <div>
+            <form id="deleteProgramaForm" action="#">
+              <h1>Eliminar programa</h1>
+
+              <div class="input-contenedor">
+                <i class="fa-solid fa-sliders"></i>
+                <input type="text" id="IDe" name="IDe" required />
+                <label for="IDe">ID del Programa: </label>
+              </div>
+
+              <button onclick="eliminarPrograma()">Eliminar</button>
+            </form>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <form id="updateProgramaForm" action="#">
+              <h1>Actualizar programa</h1>
+              <div class="input-contenedor">
+                <i class="fa-solid fa-sliders"></i>
+                <input type="text" id="IDu" name="IDu" required />
+                <label for="IDu">ID del Programa: </label>
+              </div>
+              <div class="input-contenedor">
+                <i class="fa-solid fa-book"></i>
+                <input type="text" id="nombreu" name="nombreu" required />
+                <label for="nombreu">Nombre del Programa: </label>
+              </div>
+              <div class="textarea-container">
+                <label for="descripcionu">Descripción del Programa:</label>
+                <textarea id="descripcionu" name="descripcionu"></textarea>
+              </div>
+              <div class="input-contenedor">
+                <i class="fa-solid fa-receipt"></i>
+                <input type="number" id="costou" name="costou" required />
+                <label for="costou">Costo del programa:</label>
+              </div>
+
+              <div class="multinput-container">
+                <label> Requerimientos: </label>
+                <select id="requerimientosu" multiple></select>
+              </div>
+              <button onclick="actualizarPrograma()">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <section id="ProgMostrar">
+        <div>
+          <h1>Asignaturas por programa</h1>
+          <form id="programaAsigForm" action="#">
+            <h3>Seleccionar Programa:</h3>
+            <select name="programaAsig" id="programaAsig"></select>
+            <i></i>
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+        <div class="tabla">
+          <table id="asigDataTable">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Area de formación</th>
+                <th scope="col">Asignatura</th>
+                <th scope="col">Carga horaria</th>
+              </tr>
+            </thead>
+            <tbody id="asigDataTableTbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="ediprogram">
+        <section>
+          <form id="asignaturaForm" action="#">
+            <h1>Añadir asignatura</h1>
+            <div class="con">
+              <label for="area">Area de Formación: </label>
+              <select name="area" id="area">
+                <option value="Básica">Básica</option>
+                <option value="Profesional">Profesional</option>
+                <option value="Énfasis">Énfasis</option>
+              </select>
+              <i></i>
+            </div>
+            <div class="input-contenedor">
+              <i class="fa-regular fa-clock"></i>
+              <input type="number" id="cargaAsig" name="cargaAsig" required />
+              <label for="cargaAsig">Carga Horaria: </label>
+            </div>
+            <div class="input-contenedor">
+              <i class="fa-solid fa-book"></i>
+              <input type="text" id="nombreAsig" name="nombreAsig" required />
+              <label for="nombreAsig">Asignatura: </label>
+            </div>
+
+            <button onclick="agregarAsignaturas()">Enviar</button>
+          </form>
+
+          <div>
+            <form id="deleteAsigForm" action="#">
+              <h1>Eliminar asignatura</h1>
+              <div class="input-contenedor">
+                <i class="fa-solid fa-sliders"></i>
+                <input type="text" id="IDda" name="IDda" required />
+                <label for="IDda">ID del Asignatura:</label>
+              </div>
+              <button onclick="eliminarAsignatura()">Eliminar</button>
+            </form>
+          </div>
+          <div>
+            <form id="updateAsignaturaForm" action="#">
+              <h2>Actualizar asignatura</h2>
+              <div class="con">
+                <label for="areau">Area de Formación:</label>
+                <select name="areau" id="areau">
+                  <option value="Básica">Básica</option>
+                  <option value="Profesional">Profesional</option>
+                  <option value="Énfasis">Énfasis</option>
+                </select>
+                <i></i>
+              </div>
+
+              <div class="input-contenedor">
+                <i class="fa-solid fa-sliders"></i>
+                <input type="text" id="IDau" name="IDau" required />
+                <label for="IDau">ID del Asignatura:</label>
+              </div>
+
+              <div class="input-contenedor">
+                <i class="fa-regular fa-clock"></i>
+                <input
+                  type="number"
+                  id="cargaAsigu"
+                  name="cargaAsigu"
+                  required
+                />
+                <label for="cargaAsigu">Carga Horaria: </label>
+              </div>
+
+              <div class="input-contenedor">
+                <i class="fa-solid fa-book"></i>
+                <input
+                  type="text"
+                  id="nombreAsigu"
+                  name="nombreAsigu"
+                  required
+                />
+                <label for="nombreAsigu">Asignatura: </label>
+              </div>
+
+              <button onclick="actualizarAsignatura()">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="index2.js"></script>

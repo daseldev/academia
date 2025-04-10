@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pageContainer {
+    background-color: #fffaf2;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    width: 900px;
+    height: 40px;
+    top: -20px;
+    position: relative;
+    background-color: #8D7B68;
+    border: 3px solid #fdfdfd;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    line-height: 50px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+section {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(253, 253, 237);
+    border-radius: 5px;
+    overflow: auto;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+section::-webkit-scrollbar {
+    width: 7px;
+}
+
+section::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 124, 124);
+    border-radius: 10px;
+}
+
+section h1 {
+    font-size: 2.3rem;
+    color: black;
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    align-self: center; 
+}
+
+#periodoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#periodoForm h3,
+#periodoForm select,
+#periodoForm input[type="submit"] {
+    margin-right: 15px;
+}
+
+#periodoForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 10%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#periodoForm select:hover {
+    background: #80d68b;
+}
+
+#periodoForm i {
+    position: absolute;
+    left: 703px;
+    top: calc(21.3% - 0px);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#periodoForm:hover i {
+    margin-top: 1.5px;
+}
+
+#periodoForm input{
+    width: 65px;
+    height: 29px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+#periodoForm input:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+
+#personDataTable {
+    width: 1029px;
+    font-family: "Poppins";
+    font-weight: 100;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000001a;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #ffffff33;
+    padding: 10px;
+    color: #fff;
+    font-weight: normal;
+    border: 1.5px solid #5f5346;
+}
+td {
+    background-color: rgb(245, 250, 215);
+    padding: 10px;
+    color: #2e2e2e;
+    font-weight: normal;
+    border: 0.1px solid #a7a7a7; 
+}
+
+thead th {
+    background-color: #8D7B68;
+}
+
+tbody tr:hover {
+    background-color: #ffffff4d;
+}
+
+tbody td {
+    position: relative;
+}
+
+#fechaForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#fechaForm h3,
+#fechaForm select,
+#fechaForm input[type="date"],
+#fechaForm input[type="submit"] {
+    margin-right: 15px;
+}
+
+#fechaForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 10%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#fechaForm input{
+    width: 65px;
+    height: 29px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+#fechaForm input:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+#fechaForm input[type="button"] {
+    background: #ff2626;
+}
+#fechaForm input[type="button"]:hover {
+    background: #741c1c;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+#fechaForm input[type="date"] {
+    background-color: #a79481;
+    font-family: "Poppins", monospace;
+    width: 140px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 3px #d3d3d3;
+    border-radius: 5px;
+}
+
+#aspirantesDia {
+    width: 1029px;
+    font-family: "Poppins";
+    font-weight: 100;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000001a;
+    margin: 0 auto;
+}
+
+
+#periodoForm2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#periodoForm2 h3,
+#periodoForm2 select,
+#periodoForm2 input[type="submit"] {
+    margin-right: 15px;
+}
+
+#periodoForm2 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 10%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#periodoForm2 select:hover {
+    background: #80d68b;
+}
+
+#periodoForm2 i {
+    position: absolute;
+    left: 703px;
+    top: calc(21.3% - 0px);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#periodoForm2:hover i {
+    margin-top: 1.5px;
+}
+
+#periodoForm2 input{
+    width: 65px;
+    height: 29px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+#periodoForm2 input:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+
+#insXprog {
+    width: 1029px;
+    font-family: "Poppins";
+    font-weight: 100;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000001a;
+    margin: 0 auto;
+}
+
+#periodoForm3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#periodoForm3 h3,
+#periodoForm3 select,
+#periodoForm3 input[type="submit"] {
+    margin-right: 15px;
+}
+
+#periodoForm3 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 10%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#periodoForm3 select:hover {
+    background: #80d68b;
+}
+
+#periodoForm3 i {
+    position: absolute;
+    left: 703px;
+    top: calc(21.3% - 0px);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#periodoForm3:hover i {
+    margin-top: 1.5px;
+}
+
+#periodoForm3 input{
+    width: 65px;
+    height: 29px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+#periodoForm3 input:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+#programaForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+#programaForm h3,
+#programaForm select,
+#programaForm input[type="submit"] {
+    margin-right: 15px;
+}
+
+#programaForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    width: 10%;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
+    outline: 0;
+    background: #f0f0f0;
+    color: black;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#programaForm select:hover {
+    background: #80d68b;
+}
+
+#programaForm i {
+    position: absolute;
+    left: 703px;
+    top: calc(32.3% - 0px);
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-left: 4px solid rgb(42, 102, 193);
+    border-bottom: 4px solid #2AC176;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+}
+
+#programaForm:hover i {
+    margin-top: 1.5px;
+}
+
+#programaForm input{
+    width: 65px;
+    height: 29px;
+    background: #8D7B68;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    text-shadow: none;
+    font-family: 'Poppins';
+}
+
+#programaForm input:hover {
+    background: #63574a;
+    color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+#estXprog {
+    width: 1029px;
+    font-family: "Poppins";
+    font-weight: 100;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000001a;
+    margin: 0 auto;
+}

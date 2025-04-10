@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/006012d854.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="FrontAdminF.css" />
+    <link rel="shortcut icon" type="image/png" href="notebook_6711297.png" />
+    <title>I.E Sabiduria | Administrador</title>
+  </head>
+
+  <body>
+    <div class="pageContainer">
+      <div class="nav">
+        <a href="login.html">Inicio</a>
+        <a href="admin_2.html">Programas</a>
+        <a href="admin_1.html">Información del Periodo</a>
+      </div>
+
+      <section id="s1">
+        <h1>Aspirantes por Periodo</h1>
+        <div>
+          <form id="periodoForm" action="#">
+            <h3>Filtrar por Periodo:</h3>
+            <select name="periodo" id="periodo">
+              <option value="todo">Todos</option>
+            </select>
+            <i></i>
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+        <div class="tabla">
+          <table id="personDataTable">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Programa</th>
+                <th scope="col">S1 Queremos Conocerte</th>
+                <th scope="col">S2 Servicio a Contratar</th>
+                <th scope="col">S3 Deseo de Contratación</th>
+                <th scope="col">Periodo</th>
+              </tr>
+            </thead>
+            <tbody id="personDataTableTbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="s2">
+        <div>
+          <h1>Inscripciones Diarias</h1>
+          <form id="fechaForm" action="#">
+            <h3>Filtrar por Fecha:</h3>
+            <input type="date" id="fecha" name="fecha" />
+            <input type="submit" value="Enviar" />
+            <input
+              type="button"
+              value="Eliminar"
+              onclick="deleteFiltroFecha()"
+            />
+          </form>
+        </div>
+        <div class="tabla">
+          <table id="aspirantesDia">
+            <thead>
+              <tr>
+                <th scope="col">Fecha de inscripción</th>
+                <th scope="col">Periodo</th>
+                <th scope="col">Cantidad de inscripciones</th>
+              </tr>
+            </thead>
+            <tbody id="aspirantesDiaTbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="s3">
+        <h1>Inscripciones por Programa</h1>
+        <form id="periodoForm2" action="#">
+          <h3>Seleccionar Periodo:</h3>
+          <select name="periodo2" id="periodo2"></select>
+          <i></i>
+          <input type="submit" value="Enviar" />
+        </form>
+        <div class="tabla"></div>
+        <table id="insXprog">
+          <thead>
+            <tr>
+              <th scope="col">ID Programa</th>
+              <th scope="col">Programa</th>
+              <th scope="col">Cantidad de inscripciones</th>
+            </tr>
+          </thead>
+          <tbody id="insXprogTbody"></tbody>
+        </table>
+      </section>
+
+      <section id="s4">
+        <h1>Estudiantes por Programa</h1>
+
+        <form id="periodoForm3" action="#">
+          <h3>Seleccionar Periodo :</h3>
+          <select name="periodo3" id="periodo3"></select>
+          <i></i>
+          <input type="submit" value="Enviar" />
+        </form>
+
+        <form id="programaForm" action="#">
+          <h3>Filtrar por Programa :</h3>
+          <select name="programa" id="programa">
+            <option value="todo">Todos</option>
+          </select>
+          <i></i>
+          <input type="submit" value="Enviar" />
+        </form>
+        <div class="tabla"></div>
+        <table id="estXprog">
+          <thead>
+            <tr>
+              <th scope="col">Usuario</th>
+              <th scope="col">Nombre estudiante</th>
+              <th scope="col">Nombre programa</th>
+              <th scope="col">Periodo</th>
+              <th scope="col">ID inscripción</th>
+              <th scope="col">Requisitos</th>
+            </tr>
+          </thead>
+          <tbody id="estXprogTbody"></tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script src="index.js"></script>
